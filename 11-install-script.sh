@@ -20,4 +20,34 @@ then # not installed
     else 
        echo "INSTALLING MY SQL ....SUCCESS"
     fi
-    
+    # if [ $? -ne 0 ]
+    # then
+    #  echo "installed MYSQL ...FAILURE"
+    #  exit 1
+    # else
+    #  echo "installing MYSQL ....SUCCESS"
+    # fi
+
+    dnf installed git 
+
+    if [ $? -ne 0 ]
+    then 
+       dnf instll git -y
+       if [ $? -ne 0 ]
+       then
+          echo "installing Git .. FAILURE"
+          exit 1
+       else
+          echo "installing Git ..SUCCESS"
+       fi
+
+       # if [ $? -ne 0 ]
+       # then 
+       # dnf instll git -y
+       # if [ $? -ne 0 ]
+       # then
+       #  echo "installing Git .. FAILURE"
+       #  exit 1
+       # else
+       # echo "installing Git ..SUCCESS"
+       # fi
