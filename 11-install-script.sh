@@ -39,7 +39,20 @@ then # not installed
           exit 1
        else
           echo "installing Git ..SUCCESS"
+       fi
+    else 
+       echo "Git is already ...installed"
     fi
+    # if [ $? -ne 0 ]
+    # then 
+    # dnf instll git -y
+    # if [ $? -ne 0 ]
+    # then
+    #  echo "installing Git .. FAILURE"
+    #  exit 1
+    # else
+    # echo "installing Git ..SUCCESS"
+    # fi
 
 
 
