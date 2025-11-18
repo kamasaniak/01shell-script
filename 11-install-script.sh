@@ -5,7 +5,7 @@ USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then 
     echo "ERROR:: you must have sudo access to accecute this script"
-    Exit 1 # other then 0
+    Exit 1 #other than 0
 fi 
 
 dnf installed mysql 
