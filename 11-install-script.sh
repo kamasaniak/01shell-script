@@ -39,7 +39,7 @@ then # not installed
           exit 1
        else
           echo "installing Git ..SUCCESS"
-       fi
+    fi
 
 
 
